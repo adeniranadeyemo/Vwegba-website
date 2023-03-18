@@ -8,71 +8,151 @@
 			href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
 			rel="stylesheet"
 		/>
+		<link rel="stylesheet" href="unsemantic-grid-responsive.css" />
 	</head>
 	<title>Vwegba Website - DoubleSouth</title>
 	<body>
 		<header>
-			<h3 class="logo"><span class="logo-part">Bros</span>Vwegba</h3>
+			<div class="grid-container">
+				<div class="grid-30">
+					<div class="logo">
+						<h3><span class="logo-part">Bros</span>Vwegba</h3>
+					</div>
+				</div>
 
-			<nav>
-				<ul>
-					<a href="#"><li>Collections</li></a>
+				<div class="grid-70">
+					<nav>
+						<ul>
+							<a href="#"><li>Collections</li></a>
 
-					<a href="#"><li>About</li></a>
+							<a href="#"><li>About</li></a>
 
-					<a href="#"><li>Showroom</li></a>
+							<a href="#"><li>Showroom</li></a>
 
-					<a href="#"><li>Contact</li></a>
-				</ul>
-			</nav>
+							<a href="#"><li>Contact</li></a>
+						</ul>
+					</nav>
+				</div>
+			</div>
 		</header>
 
-		<div class="hero">
-			<div class="hero-texts">
-				<h1 class="hero-text-main">Minimalism, Creativity, & Productivity</h1>
-				<p class="hero-text-minor">
-					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-					vitae suscipit, fugit. Deserunt aspernatur, provident natus quos?
-					Blanditiis fuga dolor iste, sunt necessitatibus quaerat, aspernatur
-					voluptatum at repudiandae eveniet asperiores.
-				</p>
-				<button class="hero-button">Explore</button>
+		<!-- Hero -->
+		<div class="hero grid-container">
+			<div class="grid-40">
+				<div class="hero-texts">
+					<h1 class="hero-text-main">
+						Minimalism, Creativity, <br />& Productivity
+					</h1>
+					<p class="hero-text-minor">
+						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+						vitae suscipit, fugit. Deserunt aspernatur, provident natus quos?
+						Blanditiis fuga dolor iste, sunt necessitatibus quaerat, aspernatur
+						voluptatum at repudiandae eveniet asperiores.
+					</p>
+					<button class="hero-button"><a href="#"> Explore</a></button>
+				</div>
 			</div>
 
-			<div class="hero-img">
-				<img src="imgs/bg1.jpg" alt="Reading_table_and_chair" />
+			<div class="grid-60">
+				<div class="hero-img">
+					<img
+						src="imgs/bg1.jpg"
+						alt="Reading table and chair"
+						loading="lazy"
+					/>
+				</div>
 			</div>
 		</div>
 
-		<div class="social-links-texts">
-			<div class="social-links">
-				<i class="bx bxl-facebook icon fb"></i>
-				<i class="bx bxl-twitter icon tw"></i>
-				<i class="bx bxl-instagram icon ig"></i>
+		<!-- Main -->
+		<main>
+			<div class="social-links-texts">
+				<div class="grid-container">
+					<div class="social-links grid-25">
+						<i class="bx bxl-facebook icon fb"></i>
+						<i class="bx bxl-twitter icon tw"></i>
+						<i class="bx bxl-instagram icon ig"></i>
+					</div>
+
+					<div class="social-texts grid-75">
+						<div class="social-text">
+							<h5>Mastering Artistic Creativity</h5>
+							<p>
+								Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta
+								voluptate, dicta? Repudiandae optio perferendis. Soluta
+								voluptate, dicta? Repudiandae optio perferendis. Repudiandae
+								optio perferendis.
+							</p>
+						</div>
+
+						<div class="social-text">
+							<h5>Redifining Beauty</h5>
+							<p>
+								Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta
+								voluptate, dicta? Repudiandae optio perferendis. Soluta
+								voluptate, dicta? Repudiandae optio perferendis. Repudiandae
+								optio perferendis.
+							</p>
+						</div>
+
+						<div class="social-image">
+							<img src="imgs/couch.jpg" alt="couch image" loading="lazy" />
+						</div>
+					</div>
+				</div>
 			</div>
 
-			<div class="social-texts">
-				<div class="social-text">
-					<h5>Mastering Artistic Creativity</h5>
-					<p>
-						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta
-						voluptate, dicta? Repudiandae optio perferendis.
-					</p>
-				</div>
+			<!-- Collections -->
+			<section class="collections">
+				<h2 class="collection-headline">Collections</h2>
 
-				<div class="social-text">
-					<h5>Redifining Beauty</h5>
-					<p>
-						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta
-						voluptate, dicta? Repudiandae optio perferendis.
-					</p>
-				</div>
+				<div class="collections-images-texts">
+					<div class="grid-container collections-container">
+						<!--  -->
+						<div class="grid-33 collection-img-text">
+							<img src="imgs/img2.jpg" alt="table and chair" />
+							<div class="collection-text">
+								<h1>01</h1>
+								<p>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Officia aperiam magnam in quae dolores natus temporibus,
+									excepturi error fuga perferendis voluptatum! Excepturi error
+									fuga perferendis voluptatum!
+								</p>
+							</div>
+						</div>
 
-				<div class="social-image">
-					<img src="imgs/couch.jpg" alt="" />
+						<div class="grid-33 collection-img-text">
+							<div class="collection-text">
+								<h1>02</h1>
+								<p>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Officia aperiam magnam in quae dolores natus temporibus,
+									excepturi error fuga perferendis voluptatum! Excepturi error
+									fuga perferendis voluptatum!
+								</p>
+							</div>
+							<img src="imgs/img1.jpg" alt="drawer" />
+						</div>
+
+						<div class="grid-33 collection-img-text">
+							<img src="imgs/img3.jpg" alt="chair and table" />
+							<div class="collection-text">
+								<h1>03</h1>
+								<p>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Officia aperiam magnam in quae dolores natus temporibus,
+									excepturi error fuga perferendis voluptatum! Excepturi error
+									fuga perferendis voluptatum!
+								</p>
+							</div>
+						</div>
+						<!--  -->
+					</div>
 				</div>
-			</div>
-		</div>
+				<!--  -->
+			</section>
+		</main>
 
 		<script type="text/javascript" src="script.js"></script>
 	</body>

@@ -16,7 +16,6 @@
 
 body {
   background: var(--background-color);
-  padding: 1.5em 17em 0em;
 }
 
 p {
@@ -24,18 +23,16 @@ p {
   line-height: 1.5em;
 }
 
+img {
+  width: 100%;
+}
+
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  margin-top: 2em;
 }
 
-.logo {
-  color: var(--primary-color);
-}
-
-.logo-part {
-  color: var(--secondary-color);
+header nav {
+  float: right;
 }
 
 header nav ul {
@@ -46,24 +43,37 @@ header nav ul {
 header nav ul a {
   margin-left: 3em;
   font-size: 0.75em;
-  font-weight: 500;
+  font-weight: 600;
+  padding: 0.5em 0.7em;
   text-decoration: none;
   color: var(--primary-color);
+  transition: all 0.5s ease-in;
 }
 
+header nav ul a:hover {
+  background: var(--primary-color);
+  color: var(--accent);
+  padding: 0.5em 0.7em;
+  border-radius: 3px;
+}
+
+header .logo h3 {
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.logo-part {
+  color: var(--secondary-color);
+}
+
+/* Hero  */
 .hero {
-  margin-top: 8em;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  margin-top: 6.5em;
   gap: 2em;
 }
 
 .hero-texts > * + * {
   margin-top: 1.3em;
-}
-
-.hero .hero-texts {
-  grid-column: 1 / 2;
 }
 
 .hero .hero-texts h1 {
@@ -73,37 +83,35 @@ header nav ul a {
   color: var(--primary-color);
 }
 
-.hero .hero-img {
-  grid-column: 2 / -1;
-  width: 35em;
-}
-
-.hero-img img {
-  width: 100%;
-}
-
 .hero button {
-  padding: 1em 2.7em;
+  padding: 1.3em 3em;
   background: var(--secondary-color);
-  color: var(--accent);
+  background-image: linear-gradient(to bottom right, #f04a0d, #e82431);
   border: none;
   border-radius: 2px;
-  font-size: 0.7em;
+  font-size: 0.75em;
   cursor: pointer;
 }
 
-.social-links-texts {
-  margin: 2.5em -17em 0;
-  height: 15em;
+.hero button a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+/* Main  */
+main {
   background: lightgrey;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-inline: 17em;
+  /*  height: 1000em;*/
+}
+
+.social-links-texts {
+  width: 100%;
+  height: 15em;
+  position: relative;
 }
 
 .social-links {
-  margin-top: -9em;
+  margin-top: 2em;
 }
 
 .icon {
@@ -128,16 +136,17 @@ header nav ul a {
 
 .social-texts {
   background: var(--primary-color);
-  padding: 3em 3em 2em;
-  width: 105%;
-  margin: -8em -17em 0 0;
+  padding-block: 2.5em;
+  position: absolute;
+  right: 0;
+  top: -3em;
   display: flex;
   gap: 1.5em;
 }
 
 .social-text,
 .social-image {
-  width: 13em;
+  width: 15em;
 }
 
 .social-texts h5 {
@@ -150,6 +159,68 @@ header nav ul a {
   font-size: 0.7em;
 }
 
-.social-image img {
-  width: 100%;
+.collections {
+  margin-top: 3em;
+}
+
+.collections > h2 {
+  text-align: center;
+  font-size: 2em;
+}
+
+.collections-images-texts {
+  margin-top: 2em;
+}
+
+.collection-img-text {
+  display: grid;
+  height: 100%;
+  grid-auto-rows: 3;
+}
+
+.collection-img-text img {
+  grid-row: span 2;
+  height: 35em;
+}
+
+.collection-img-text div {
+  grid-row: span 1;
+}
+
+.collection-text {
+  padding: 6.7em 2em;
+  text-align: center;
+  background: var(--accent);
+  position: relative;
+}
+
+.collection-text p {
+  z-index: 100;
+  top: 55%;
+  left: 50%;
+  right: -20%;
+  align-self: center;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  font-size: 0.8em;
+}
+
+.collection-text p::before {
+  content: '';
+  width: 5em;
+  height: 2px;
+  left: 35%;
+  top: -20%;
+  background: red;
+  position: absolute;
+}
+
+.collection-text h1 {
+  position: absolute;
+  font-size: 10em;
+  z-index: 2;
+  bottom: -0.23em;
+  left: -0.05em;
+  color: lightgrey;
+  opacity: 0.5;
 }

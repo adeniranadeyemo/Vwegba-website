@@ -247,19 +247,9 @@ main {
   margin-block: 5em;
 }
 
-.img-medium > img {
+.img-medium > .first-img {
   height: 31.3em;
   margin-bottom: 0;
-}
-
-.middle {
-  width: 3em;
-  height: 3em;
-  background: transparent;
-}
-
-.medium {
-  margin-right: 0;
 }
 
 .medium h2 {
@@ -290,23 +280,11 @@ main {
 }
 
 .medium-imgs {
-  display: flex;
   gap: 0.5em;
-  position: relative;
 }
 
 .medium-imgs img {
-  width: 32.5%;
-  height: 16.6em;
-  position: absolute;
+  height: 17.8em;
   object-fit: cover;
-}
-
-.medium-img2 {
-  left: 50%;
-  transform: translate(-50%);
-}
-
-.medium-img3 {
-  right: 0;
+  overflow: hidden;
 }

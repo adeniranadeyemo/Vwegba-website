@@ -279,6 +279,11 @@ main {
   width: 43%;
 }
 
+.medium-imgs {
+  display: flex;
+  gap: 10px;
+}
+
 .medium-imgs img {
   height: 17.8em;
   object-fit: cover;
@@ -464,7 +469,8 @@ main {
 /* Footer */
 
 footer {
-  background: var(--secondary-color);
+  /*  background: var(--secondary-color);*/
+  background-image: linear-gradient(to bottom, #ec5e46, #ed4545);
   border-top: 3px solid var(--primary-color);
   padding-block: 3em;
   color: var(--accent);
@@ -554,9 +560,13 @@ footer .contact-section .bottom-message form button {
 .bottom-message form button:hover {
   cursor: pointer;
   box-shadow: 0px 3px 7px 4px rgba(239.06, 239.06, 239.06, 0.4);
-  margin-top: 10em;
 }
 
 .bottom-message form button .send {
   transform: rotate(-45deg);
+  transition: transform 1s ease-in-out;
+}
+
+.bottom-message form button:hover .send {
+  transform: rotate(315deg);
 }

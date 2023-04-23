@@ -353,6 +353,26 @@ main {
 
 .table-chair {
   margin-block: 5em;
+  position: relative;
+  height: 23em;
+  overflow: hidden;
+}
+
+#slide {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  transition: 0.5s;
+}
+
+.table-chair .arrows {
+  display: flex;
+  flex-direction: column;
+  height: 23em;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 .wooden-table-chair {
@@ -420,12 +440,6 @@ main {
 
 .wooden-table-chair-texts .price p sup {
   font-size: 0.6em;
-}
-
-.table-chair .arrows {
-  display: flex;
-  flex-direction: column;
-  height: 23em;
 }
 
 .table-chair .arrows .arrow {

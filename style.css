@@ -298,7 +298,6 @@ main {
 
 .vwegba-texts {
   font-family: 'Agrandir', sans-serif;
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -316,6 +315,7 @@ main {
 }
 
 .vwegba-texts h2 {
+  position: relative;
   font-size: 3em;
   width: 180%;
   padding-block: 0.3em;
@@ -363,7 +363,7 @@ main {
   position: absolute;
   left: 0;
   right: 0;
-  transition: 0.5s;
+  transition: all ease-in-out 1.35s;
 }
 
 .table-chair .arrows {
@@ -497,7 +497,7 @@ footer .contact-section .top-message p {
 
 footer .contact-section .top-message p span {
   padding: 0.1em 0.15em;
-  font-weight: ;
+  /* font-weight: ; */
   background: var(--accent);
   color: var(--secondary-color);
 }

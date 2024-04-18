@@ -7,6 +7,10 @@
   font-family: 'Inter', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --background-color: #ebebed;
   --primary-color: #06031d;
@@ -351,7 +355,7 @@ main {
 
 /*Table-Chair*/
 
-.table-chair {
+.showroom {
   margin-block: 5em;
   position: relative;
   height: 23em;
@@ -366,7 +370,7 @@ main {
   transition: all ease-in-out 1.35s;
 }
 
-.table-chair .arrows {
+.showroom .arrows {
   display: flex;
   flex-direction: column;
   height: 23em;
@@ -442,15 +446,15 @@ main {
   font-size: 0.6em;
 }
 
-.table-chair .arrows .arrow {
+.showroom .arrows .arrow {
   height: 50%;
 }
 
-.table-chair .arrows .arrow:hover {
+.showroom .arrows .arrow:hover {
   cursor: pointer;
 }
 
-.table-chair .arrows .up {
+.showroom .arrows .up {
   background: var(--secondary-color);
   display: flex;
   justify-content: center;
@@ -459,7 +463,7 @@ main {
   font-size: 1.5em;
 }
 
-.table-chair .arrows .down {
+.showroom .arrows .down {
   background: var(--primary-color);
   display: flex;
   justify-content: center;
@@ -468,11 +472,11 @@ main {
   font-size: 1.5em;
 }
 
-.table-chair .arrows .up:hover {
+.showroom .arrows .up:hover {
   background: #db6464;
 }
 
-.table-chair .arrows .down:hover {
+.showroom .arrows .down:hover {
   background: #374469;
 }
 
